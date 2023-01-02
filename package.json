@@ -1,0 +1,22 @@
+{
+  "name": "biological-tictactoe",
+  "version": "1.0.0",
+  "description": "A Tic-Tac-Toe game combined with biology.",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "browserslist": "defaults and supports async-functions",
+  "dependencies": {
+    "alertifyjs": "1.13.1",
+    "boardgame.io": "0.45.0",
+    "jquery": "3.6.3",
+    "party-js": "2.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "parcel-bundler": "^1.6.1"
+  },
+  "keywords": []
+}
