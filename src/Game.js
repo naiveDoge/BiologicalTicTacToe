@@ -1,10 +1,12 @@
 import { INVALID_MOVE } from 'boardgame.io/core';
 import alertify from 'alertifyjs';
 import $ from 'jquery';
-import 'jquery-easy-loading';
 
 var questionList = [];
-getQuestions();
+
+window.onload = function() {
+  getQuestions();
+}
 
 export const TicTacToe = {
   setup: () => ({ cells: Array(9).fill(null) }),
@@ -117,9 +119,9 @@ function getRandomInt(max) {
 }
 
 function getQuestions() {
-  $('body').loading();
+  alertify.alert('The game is loading', '<div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>');
   $.getScript('/questions.js').done(function (script) {
     questionList = questionsJS;
-    $('body').loading('stop');
+    alertify.alert().close();
   });
 }
