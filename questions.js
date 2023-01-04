@@ -1,4 +1,4 @@
-var questionsJS = [
+export var questionsJS = [
   [
     'What is the advantage of having specialized muscle tissues (ex. musclar and cardiovascular)?\nA. They can be controlled by different parts of the brain\nB. They work in shifts when the other kinds need rest\nC. There is no advantage of having them specialized',
     'A',
