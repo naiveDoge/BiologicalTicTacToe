@@ -64,6 +64,7 @@ class TicTacToeClient {
           url = 'https://cdn-icons-png.flaticon.com/512/3904/3904469.png';
         }
         cell.innerHTML = '<img class="icon" src="' + url + '" />';
+        cell.className = 'cell-disabled';
       } else {
         cell.textContent = '';
       }

@@ -6,11 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
       .cell {
-        border: 1px solid #555;
+        border: 3px solid #aaa;
         width: 50px;
         height: 50px;
-        line-height: 50px;
         text-align: center;
+        cursor: pointer;
+        background: #eeffe9;
+      }
+      .cell:hover {
+        background: #eff;
+      }
+      .cell-disabled {
+        border: 3px solid #aaa;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        background: #fff;
+        cursor: default;
       }
       body {
         padding: 20px;
@@ -19,11 +31,14 @@
         width: 40px;
         height: 40px;
       }
+      h4.sub-title {
+        margin-bottom: 15px;
+      }
     </style>
   </head>
   <body>
     <h1>Biological Tic-Tac-Toe</h1>
-    <h4 class="text-muted">Powered by Edward, Kenny.</h3>
+    <h4 class="text-muted sub-title">Powered by Edward, Kenny.</h4>
     <div id="app"></div>
     <div>
       <div class="row row-cols-auto gap-3">

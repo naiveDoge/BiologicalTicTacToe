@@ -32656,6 +32656,7 @@ class TicTacToeClient {
           url = 'https://cdn-icons-png.flaticon.com/512/3904/3904469.png';
         }
         cell.innerHTML = '<img class="icon" src="' + url + '" />';
+        cell.className = 'cell-disabled';
       } else {
         cell.textContent = '';
       }
@@ -32705,7 +32706,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63578" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54471" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
